@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: Roboto;
+    background-color: #f3f3f3;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #3b5998;
+    height: 64px;
+    color: rgb(32, 9, 9);
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    font-size: 18px;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+.navbar ul {
+    margin: 8px 0 0 0;
+    list-style: none;
+}
+
+.navbar a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.7s;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    color: #ccc;
+    transition: 0.4s;
+}
+
+.side-nav a:hover {
+    color: #fff;
+
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    left: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+@media(max-width:568px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+
+    @media(min-width:568px) {
+        .open-slide {
+            display: none;
+        }
+    }
+}
